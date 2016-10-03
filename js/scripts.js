@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
     //         console.log(Object.keys(obj.user_info[i])[k]);
     //     }
     // }
-    $.getJSON("/js/data.json", function(json) {
+    $.getJSON("js/data.json", function(json) {
         //console.log("JSON Data: " + json);
         $.each(json, function($key, $val) {
           for (var i = 0; i < $val.length; i++) {
@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
               //console.log($val.length);
                 $.each($val[i], function($key, $val) {
                     console.log("key:" + $key + " , value:" + $val)
-                    $('#content').append('<div class ="field field-item'+i+'"><div class="field-title">'+$key+':</div><div class ="field-content">'+$val+'</div>')
+                    $('#content').append('<div class ="field field-item'+i+'+"><div class="field-title">'+$key+':</div><div class ="field-content">'+$val+'</div>')
                 });
             }
           }
