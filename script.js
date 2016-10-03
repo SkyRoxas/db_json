@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
-    var json = '{"user_info":[{"title":"Roxas","documents":"a super handsome boy","uid": 1},{"title":"SkyRoxas","documents":"a super handsome boy","uid": 2}]}';
-    var obj = JSON.parse(json);
+    //var json = '{"user_info":[{"title":"Roxas","documents":"a super handsome boy","uid": 1},{"title":"SkyRoxas","documents":"a super handsome boy","uid": 2}]}';
+    //var obj = JSON.parse(data);
 
 
 
@@ -11,14 +11,18 @@ jQuery(document).ready(function() {
     //         console.log(Object.keys(obj.user_info[i])[k]);
     //     }
     // }
-
-    $.each(obj, function(i, val) {
-        if (i == "user_info") {
-            $.each(val[0], function($key, $val) {
-                alert("key:" + $key + " , value:" + $val)
-            });
-        }
+    $.getJSON("data.json", function(json) {
+        //console.log("JSON Data: " + json);
+        $.each(json, function($key, $val) {
+            if ($key == "user_info") {
+                $.each($val[0], function($key, $val) {
+                    alert("key:" + $key + " , value:" + $val)
+                });
+            }
+        });
     });
+
+
     //$('#content').html(obj[0].title);
 
 })
