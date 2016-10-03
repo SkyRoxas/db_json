@@ -14,11 +14,16 @@ jQuery(document).ready(function() {
     $.getJSON("/js/data.json", function(json) {
         //console.log("JSON Data: " + json);
         $.each(json, function($key, $val) {
+          for (var i = 0; i < $val.length; i++) {
             if ($key == "user_info") {
-                $.each($val[0], function($key, $val) {
-                    alert("key:" + $key + " , value:" + $val)
+              //console.log($val.length);
+                $.each($val[i], function($key, $val) {
+                    console.log("key:" + $key + " , value:" + $val)
+                    $('#content').append('<div class ="field field-item'+i+'"><div class="field-title">'+$key+':</div><div class ="field-content">'+$val+'</div>')
                 });
             }
+          }
+
         });
     });
 

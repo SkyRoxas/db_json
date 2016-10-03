@@ -2,4 +2,16 @@ body{
   h1{
     font-size: 20px;
   }
+  #content{
+    .field{
+      display: flex;
+      >*{
+        padding: 0px 15px;
+      }
+      .field-title{
+        width: 100px;
+        font-weight: bold;
+      }
+    }
+  }
 }
