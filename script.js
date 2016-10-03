@@ -12,10 +12,10 @@ jQuery(document).ready(function() {
     //     }
     // }
 
-    $.each(obj, function(i, val){
-        if (i=="user_info"){
-            $.each(val[0] , function(applier, a_val){
-                alert("key:"+applier+" , value:"+a_val)
+    $.each(obj, function(i, val) {
+        if (i == "user_info") {
+            $.each(val[0], function($key, $val) {
+                alert("key:" + $key + " , value:" + $val)
             });
         }
     });
