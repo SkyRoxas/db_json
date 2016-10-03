@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
     //         console.log(Object.keys(obj.user_info[i])[k]);
     //     }
     // }
-    $.getJSON("data.json", function(json) {
+    $.getJSON("/js/data.json", function(json) {
         //console.log("JSON Data: " + json);
         $.each(json, function($key, $val) {
             if ($key == "user_info") {
