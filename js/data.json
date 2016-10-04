@@ -1,11 +1,11 @@
 {
     "user_info": [{
         "title": "Roxas",
-        "documents": "a super handsome boy",
+        "doc": "a super handsome boy",
         "uid": 1
     }, {
         "title": "SkyRoxas",
-        "documents": "a super handsome boy",
+        "doc": "a super handsome boy",
         "uid": 2
     }]
 }
