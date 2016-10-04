@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
                 if ($key == "user_info") {
                     //console.log($val.length);
                     $.each($val[i], function($key, $val) {
-                        console.log("key:" + $key + " , value:" + $val)
+                        //console.log("key:" + $key + " , value:" + $val)
                         $('#content .JsonGet').find('.item_' + i + '')
                             .append(
                                 '<div class ="field field_' + $key + '">'+
