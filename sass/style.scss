@@ -1,29 +1,28 @@
 body {
-    h1 {
-        font-size: 20px;
-    }
-
     #content {
-        .file {
-            margin: 20px 0;
-            border: 1px solid;
-            padding: 15px;
+        .JsonGet {
             max-width: 500px;
 
-            .field {
-                display: flex;
+            .file {
+                margin: 20px 0;
+                border: 1px solid;
+                padding: 15px;
 
-                .field-item {
-                    padding: 10px 20px;
-                }
+                .field {
+                    display: flex;
 
-                .field-label {
-                    width: 100px;
-                    text-align: right;
-                }
+                    .field-item {
+                        padding: 10px 20px;
+                    }
 
-                .field-content {
-                    border-left: 1px solid;
+                    .field-label {
+                        width: 100px;
+                        text-align: right;
+                    }
+
+                    .field-content {
+                        border-left: 1px solid;
+                    }
                 }
             }
         }
