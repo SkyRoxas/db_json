@@ -1,0 +1,25 @@
+.JsonInput {
+    max-width: 500px;
+
+    .JsonInputForm {
+        border: 1px solid;
+        padding: 20px;
+        .form-item-wrapper{
+          margin-bottom: 20px;
+        }
+        label{
+          display: block;
+          padding: 10px 0px;
+        }
+        input,textarea{
+          width: 100%;
+          display: block;
+          box-sizing: border-box;
+          padding: 5px;
+          //padding: 20px 0px;
+        }
+        textarea{
+          min-height: 100px;
+        }
+    }
+}
