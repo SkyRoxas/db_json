@@ -18,11 +18,9 @@ jQuery(document).ready(function($) {
         console.log(outputObj);
 
         perfileArray.push(outputObj);
-        console.log(perfileArray);
         console.log(JSON.stringify(obj));
 
         $.each(obj, function($key, $val) {
-            //$('#content .JsonOutput').append('<div class ="file item_"></div>');
             if ($key == "perfile") {
                 $.each($val[$val.length -1], function($key, $val) {
                     $('#content .JsonOutput')
@@ -31,7 +29,7 @@ jQuery(document).ready(function($) {
                             '<div class="field-label field-item">' + $key + '</div>' +
                             '<div class ="field-content field-item">' + $val + '</div>' +
                             '</div>'
-                        )
+                        );
                 });
 
             }
