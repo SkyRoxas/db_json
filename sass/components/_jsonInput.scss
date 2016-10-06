@@ -37,28 +37,38 @@
             flex: 1;
 
             .JsonOutput {
-                border: 1px solid;
                 padding: 20px;
+                box-sizing: border-box;
+                border: 1px solid;
+                min-height: 350px;
 
-                .file {
-                    margin: 20px 0;
-                    border: 1px solid;
-                    padding: 15px;
+                .field-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
 
-                    .field {
-                        display: flex;
+                    > .field-item {
+                        margin: 1%;
+                        box-sizing: border-box;
+                        border: 1px solid;
+                        width: 48%;
 
-                        .field-item {
-                            padding: 10px 20px;
-                        }
+                        .field {
+                            display: flex;
 
-                        .field-label {
-                            width: 100px;
-                            text-align: right;
-                        }
+                            .field-item {
+                                padding: 10px 20px;
+                            }
 
-                        .field-content {
-                            border-left: 1px solid;
+                            .field-label {
+                                width: 100px;
+                                text-align: right;
+                                background: #000000;
+                                color: #ffffff;
+                            }
+
+                            .field-content {
+                                //border-left: 1px solid;
+                            }
                         }
                     }
                 }

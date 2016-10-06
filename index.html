@@ -11,36 +11,41 @@
 </head>
 
 <body>
-    <h1 style ="text-align:center;padding:20px;">Json格式操作</h1>
+    <h1 style="text-align:center;padding:20px;">Json格式操作</h1>
     <div id="content">
+
         <div class="region-wrapper">
+          <div>
+            <h2>存取資料為JSON格式</h2>
             <div class="JsonInput">
                 <div class="wrapper">
                     <div class="item item1">
                         <div class="JsonInputForm">
                             <h2>JsonInput</h2>
                             <div class="form-item-wrapper">
-                                <div class="form-item"><label>標題</label></div>
+                                <div class="form-item"><label>title</label></div>
                                 <div class="form-item"><input class="inputData" type="text" name="name"></div>
                             </div>
                             <div class="form-item-wrapper">
-                                <div class="form-item"><label>描述</label></div>
+                                <div class="form-item"><label>doc</label></div>
                                 <div class="form-item"><textarea class="inputData" name="doc"></textarea></div>
                             </div>
-                            <div><button type="button">送出</button></div>
+                            <div><button class="submit" type="button">送出</button></div>
                         </div>
                     </div>
 
                     <div class="item item2">
                         <div class="JsonOutput">
                             <h2>JsonOutput</h2>
+                            <div class="field-wrapper"></div>
                         </div>
                     </div>
 
                 </div>
             </div>
+            </div>
             <div class="JsonGet">
-                <h2>Function getJSON </h2>
+                <h2>Function getJSON 匯入的 JSON 資料</h2>
             </div>
 
         </div>

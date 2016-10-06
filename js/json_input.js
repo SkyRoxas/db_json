@@ -22,10 +22,10 @@ jQuery(document).ready(function($) {
 
         $.each(obj, function($key, $val) {
             if ($key == "perfile") {
-                $.each($val[$val.length -1], function($key, $val) {
-                    $('#content .JsonOutput')
+                $.each($val[$val.length - 1], function($key, $val) {
+                    $('#content .JsonOutput >.field-wrapper')
                         .append(
-                            '<div class ="field field_' + $key + '">' +
+                            '<div class ="field field_' + outputObj.pid + " " + $key + '">' +
                             '<div class="field-label field-item">' + $key + '</div>' +
                             '<div class ="field-content field-item">' + $val + '</div>' +
                             '</div>'
@@ -35,10 +35,15 @@ jQuery(document).ready(function($) {
             }
 
         });
+        $('.field_' + outputObj.pid).wrapAll('<div class ="field-item field-item'+outputObj.pid+'"></div>');
     }
 
-    $('button').click(function() {
+
+    $('button.submit').click(function() {
         btnClick();
+    })
+    $('button.reset').click(function() {
+        reset();
     })
 
 })
