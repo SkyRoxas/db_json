@@ -36,6 +36,7 @@ jQuery(document).ready(function($) {
 
         });
         $('.field_' + outputObj.pid).wrapAll('<div class ="field-item field-item'+outputObj.pid+'"></div>');
+        $('.inputData').val(null);
     }
 
 
